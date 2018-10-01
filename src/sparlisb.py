@@ -1,6 +1,6 @@
 """
   Capstone Project.  Code written by Shamus Sparling.
-  Fall term, 2018-2019. CAn you see me?
+  Fall term, 2018-2019. CAn you see me2?
 """
 
 import rosebotics as rb
