@@ -30,10 +30,9 @@ class Snatch3rRobot(object):
 
     def forward_for_n_seconds(self, time_n, duty_cycle):
         """Sets up the function for the robot to move forward for N seconds."""
-
-        self.go(duty_cycle, duty_cycle)
+        x = time.time()
         while True:
-            x = time.time()
+            self.go(duty_cycle, duty_cycle)
             if x + time_n == time.time():
                 break
 
