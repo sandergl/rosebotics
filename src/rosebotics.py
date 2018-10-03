@@ -1,6 +1,6 @@
 """
   Capstone Project.  Code shared by the team.
-  Team members:  Garrett Sanders, Elijah Williams, and Shamos Sparling.
+  Team members:  Garrett Sanders, Elijah Williams, and Shamus Sparling.
   Fall term, 2018-2019.
 """
 
