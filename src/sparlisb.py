@@ -39,14 +39,4 @@ def run_test_go_stop():
     print(robot.left_wheel.get_degrees_spun())
 
 
-def spin_for_n_seconds(time, duty_cycle):
-    robot = rb.Snatch3rRobot()
-
-    robot.go(-duty_cycle, duty_cycle)
-    while True:
-        x = time.time()
-        if x + time == time.time():
-            break
-
-
 main()
