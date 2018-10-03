@@ -42,7 +42,7 @@ class Snatch3rRobot(object):
         while True:
             x = time.time()
             if x + time_n == time.time():
-                break
+                break 
 
 
 class Wheel(object):
