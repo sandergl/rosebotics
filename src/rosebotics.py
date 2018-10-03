@@ -46,10 +46,10 @@ class Snatch3rRobot(object):
                 break
 
     def spin_for_n_seconds(self, time_n, duty_cycle):
-        self.go(duty_cycle, -duty_cycle)
+        x = time.time()
         while True:
-            x = time.time()
-            if x + time_n == time_n.time():
+            self.go(duty_cycle, -duty_cycle)
+            if x + time_n == time.time():
                 break
 
 
