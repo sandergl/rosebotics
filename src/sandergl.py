@@ -9,8 +9,7 @@ import time
 
 def main():
     """ Runs tests. """
-    print()
-    #run_tests()
+    run_tests()
 
 
 def run_tests():

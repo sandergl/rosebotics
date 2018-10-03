@@ -33,7 +33,8 @@ class Snatch3rRobot(object):
         x = time.time()
         while True:
             self.go(duty_cycle, duty_cycle)
-            if x + time_n == time.time():
+            if x + time_n <= time.time():
+                self.stop()
                 break
 
     def turn_robot(self, left_duty_cycle, right_duty_cycle, time):
