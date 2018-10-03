@@ -41,7 +41,7 @@ def run_test_go_stop():
     print(robot.left_wheel.get_degrees_spun())
 
 
-def forward_for_n_seconds(time, duty_cycle):
+def forward_for_n_seconds(time_n, duty_cycle):
     """Sets up the function for the robot to move forward for N seconds."""
 
     robot = rb.Snatch3rRobot
@@ -49,7 +49,7 @@ def forward_for_n_seconds(time, duty_cycle):
     robot.go(duty_cycle, duty_cycle)
     while True:
         x = time.time()
-        if x + time == time.time():
+        if x + time_n == time.time():
             break
 
 
