@@ -43,7 +43,7 @@ class Snatch3rRobot(object):
             self.left_wheel.start_spinning(left_duty_cycle)
             self.right_wheel.start_spinning(right_duty_cycle)
 
-            if x + time == time.time():
+            if time.time() >= x + time:
                 break
             self.stop(stop_action=StopAction.BRAKE.value)
 
