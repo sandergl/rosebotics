@@ -37,13 +37,15 @@ class Snatch3rRobot(object):
                 break
 
     def turn_robot(self, left_duty_cycle, right_duty_cycle, time):
-
-        self.left_wheel(left_duty_cycle)
-        self.right_wheel(right_duty_cycle)
+        """does as the function states, duh."""
+        x = time.time()
         while True:
-            x = time.time()
+            self.left_wheel.start_spinning(left_duty_cycle)
+            self.right_wheel.start_spinning(right_duty_cycle)
+
             if x + time == time.time():
                 break
+            self.stop(stop_action=StopAction.BRAKE.value)
 
     def spin_for_n_seconds(self, time_n, duty_cycle):
         x = time.time()
