@@ -52,7 +52,8 @@ class Snatch3rRobot(object):
         x = time.time()
         while True:
             self.go(duty_cycle, -duty_cycle)
-            if x + time_n == time.time():
+            if x + time_n <= time.time():
+                self.stop()
                 break
 
 
